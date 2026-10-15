@@ -4,80 +4,146 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Explore the menu and contact Spice Garden restaurant.">
-  <title>Spice Garden | Restaurant Demo</title>
+  <meta name="description" content="Discover the Spice Garden restaurant demo, popular dishes and contact information.">
+  <title>Spice Garden | Fine Dining Demo</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <header class="navbar">
-    <a class="logo" href="#">Spice Garden</a>
+    <a class="logo" href="#home">SPICE<span>GARDEN.</span></a>
+
     <nav>
-      <a href="#menu">Menu</a>
-      <a href="#about">About</a>
+      <a href="#home">Home</a>
+      <a href="#menu">Our Menu</a>
+      <a href="#about">Our Story</a>
       <a href="#contact">Contact</a>
     </nav>
+
+    <a class="nav-button" href="#menu">Explore Menu ↗</a>
   </header>
 
   <main>
-    <section class="hero">
-      <p class="eyebrow">FRESH FOOD · WARM HOSPITALITY</p>
-      <h1>Good Food.<br>Great Moments.</h1>
-      <p>Discover delicious meals made for sharing
-        with the people you love.</p>
-      <a class="button" href="#menu">Explore Our Menu</a>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">A TASTE WORTH REMEMBERING</p>
+        <h1>Where Every<br>Meal Becomes a<br><span>Memory.</span></h1>
+        <p class="hero-description">
+          Discover bold flavours, comforting classics and
+          a dining experience made for unforgettable moments.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-gold" href="#menu">Discover Our Menu ↗</a>
+          <a class="text-link" href="#about">Discover our story →</a>
+        </div>
+        <div class="hero-note">
+          <span class="gold-dot"></span>
+          YOUR NEXT FAVOURITE MEAL STARTS HERE
+        </div>
+      </div>
+
+      <div class="hero-art">
+        <div class="art-circle">
+          <span class="art-icon">🍛</span>
+        </div>
+        <div class="art-label">
+          <span class="eyebrow">THE CHEF'S PICK</span>
+          <strong>Made with passion.</strong>
+        </div>
+        <div class="art-number">01 / SIGNATURE EXPERIENCE</div>
+      </div>
     </section>
 
-    <section id="menu" class="section">
-      <p class="eyebrow">OUR FAVOURITES</p>
-      <h2>Popular Dishes</h2>
+    <section class="menu section" id="menu">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">CURATED FOR YOU</p>
+          <h2>Our <span>Signature</span> Menu</h2>
+        </div>
+        <p class="section-intro">
+          Simple ingredients. Big flavours.<br>
+          Made for moments worth sharing.
+        </p>
+      </div>
 
       <div class="menu-grid">
-        <article class="dish">
-          <div class="dish-icon">🍛</div>
-          <h3>Veg Meals</h3>
-          <p>A comforting traditional meal.</p>
-          <strong>₹120</strong>
+        <article class="dish-card">
+          <div class="dish-top">
+            <span class="dish-icon">🍛</span>
+            <span class="dish-number">01</span>
+          </div>
+          <p class="dish-category">HOUSE FAVOURITE</p>
+          <h3>Traditional Veg Meals</h3>
+          <p>A comforting meal inspired by traditional flavours.</p>
+          <div class="dish-bottom">
+            <strong>₹120</strong>
+            <a href="#contact" aria-label="Ask about Traditional Veg Meals">↗</a>
+          </div>
         </article>
 
-        <article class="dish">
-          <div class="dish-icon">🥞</div>
-          <h3>Masala Dosa</h3>
-          <p>Crispy dosa with a spiced filling.</p>
-          <strong>₹80</strong>
+        <article class="dish-card featured">
+          <div class="dish-top">
+            <span class="dish-icon">🥞</span>
+            <span class="dish-number">02</span>
+          </div>
+          <p class="dish-category">CUSTOMER FAVOURITE</p>
+          <h3>Crispy Masala Dosa</h3>
+          <p>Golden, crisp dosa with a delicious spiced filling.</p>
+          <div class="dish-bottom">
+            <strong>₹80</strong>
+            <a href="#contact" aria-label="Ask about Crispy Masala Dosa">↗</a>
+          </div>
         </article>
 
-        <article class="dish">
-          <div class="dish-icon">🍜</div>
-          <h3>Veg Noodles</h3>
-          <p>Noodles tossed with fresh vegetables.</p>
-          <strong>₹100</strong>
+        <article class="dish-card">
+          <div class="dish-top">
+            <span class="dish-icon">🍜</span>
+            <span class="dish-number">03</span>
+          </div>
+          <p class="dish-category">QUICK & DELICIOUS</p>
+          <h3>Garden Veg Noodles</h3>
+          <p>Vegetables and noodles tossed together for a tasty meal.</p>
+          <div class="dish-bottom">
+            <strong>₹100</strong>
+            <a href="#contact" aria-label="Ask about Garden Veg Noodles">↗</a>
+          </div>
         </article>
       </div>
-      <p class="disclaimer">Demo menu and prices. Replace with verified details.</p>
+
+      <p class="demo-note">
+        Portfolio demo: all menu items and prices are examples, not verified restaurant details.
+      </p>
     </section>
 
-    <section id="about" class="about section">
-      <p class="eyebrow">OUR STORY</p>
-      <h2>A place to enjoy good food</h2>
-      <p>Imagine a welcoming neighbourhood restaurant
-        serving fresh dishes in a comfortable setting.
-        This section can tell your real client's story,
-        highlight its specialties and explain what makes it unique.</p>
+    <section class="about section" id="about">
+      <p class="eyebrow">MORE THAN JUST A MEAL</p>
+      <h2>Good food brings<br><span>people together.</span></h2>
+      <p>
+        Spice Garden is a sample restaurant concept built to
+        demonstrate a modern restaurant website. A real restaurant
+        can use this section to share its story, specialties and values.
+      </p>
+      <a class="text-link" href="#contact">Get in touch →</a>
     </section>
 
-    <section id="contact" class="contact section">
-      <p class="eyebrow">COME VISIT US</p>
-      <h2>We'd love to serve you</h2>
-      <p>Restaurant address: add the real business address here.</p>
-      <p>Opening hours: add verified hours here.</p>
-      <a class="button" href="tel:+910000000000">Call the Restaurant</a>
-      <p class="disclaimer">Demo phone number. Replace before publishing.</p>
+    <section class="contact section" id="contact">
+      <p class="eyebrow">YOUR TABLE AWAITS</p>
+      <h2>Let's make it<br><span>memorable.</span></h2>
+      <p>Replace this section with the real restaurant's approved contact details.</p>
+      <a class="button button-gold" href="mailto:hello@example.com">
+        Contact the Restaurant ↗
+      </a>
+      <p class="demo-note">
+        Demo email only. Replace it with a verified business email before launch.
+      </p>
     </section>
   </main>
 
   <footer>
-    <p>Spice Garden — Portfolio Demo</p>
-    <p>Designed as a sample restaurant website.</p>
+    <a class="logo" href="#home">SPICE<span>GARDEN.</span></a>
+    <p>Sample website concept · Created for a portfolio</p>
+    <a href="#home">Back to top ↑</a>
   </footer>
+
 </body>
 </html>
